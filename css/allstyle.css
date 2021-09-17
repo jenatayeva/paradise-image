@@ -1,0 +1,152 @@
+* {
+    font-family: Poppins;
+    color: #ffffff;
+}
+
+* svg {
+    fill: #ffffff;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 70vh;
+    background-image: url("/image/pexels-brandon-montrone-1179229.jpg");
+}
+
+/* ::before ::after da tagyn yanyna style berip bolyar */
+.wrapper::before {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    content: '';
+    height: 70vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.253);
+}
+
+
+.container {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 66px;
+    position: fixed;
+    width: 95%;
+    margin: 0 auto;
+    top: 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.links {
+    display: flex;
+}
+
+.links ul>li {
+    display: inline;
+    padding-left: 2.15rem;
+}
+
+.links ul>li>a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    padding-left: 2.15rem;
+}
+
+.btn-block {
+    display: flex;
+    align-items: center;
+    padding-left: 2.15rem;
+}
+
+.button-join {
+    display: block;
+    padding: 0.8rem 2rem;
+    height: auto;
+    background: #05a081;
+    border: none;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 5px;
+    font-weight: 400;
+    line-height: 1;
+
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.search {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 3;
+}
+
+.input-wrapper {
+    width: 100%;
+    display: flex;
+    height: 60px;
+}
+
+input {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+
+input::placeholder {
+    font-weight: 300;
+    color: grey;
+}
+
+button {
+    border: none;
+    border-radius: 0 5px 5px 0;
+    display: block;
+    padding: 0 1rem;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center
+}
+
+.tags {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
+.tags span {
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+.tags .bold {
+    opacity: 1;
+    font-weight: 400;
+}
